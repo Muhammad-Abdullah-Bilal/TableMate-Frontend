@@ -187,8 +187,8 @@ function DishCardsGrid({
             {/* Image */}
             <div className="relative w-full h-32 bg-zinc-900 overflow-hidden border-b border-white/5">
               <Image 
-                src={getItemImage(item.name)} 
-                alt={item.name} 
+                src={encodeURI(getItemImage(item.name))} 
+                alt="" 
                 fill 
                 className="object-cover group-hover:scale-105 transition-transform duration-500" 
                 sizes="(max-width: 768px) 100vw, 30vw"
